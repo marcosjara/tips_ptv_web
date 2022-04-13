@@ -25,8 +25,8 @@ module.exports = {
           {
             "provider": "github",
             "owner": "marcosjara",
-            "repo": "https://github.com/marcosjara/tips_ptv_web",
-            "token": "5dRHAudbZE2cyhrBCjCH"
+            "repo": "tips_ptv_web",
+            "token": "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"
           }]
       }
     }
