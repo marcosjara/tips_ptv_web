@@ -1,17 +1,20 @@
 {
   "name": "com.tips.tips_ptv",
-  "version": "1.0.8",
+  "version": "1.0.19",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "electron:build": "vue-cli-service electron:build -- --linux deb --win nsis -p never",
+    "electron:build1": "vue-cli-service electron:build -- --linux deb --win --ia32 -p never",
+    "electron:build": "vue-cli-service electron:build --windows nsis:ia32 -p never",
     "electron:serve": "vue-cli-service electron:serve",
-    "publish": "vue-cli-service electron:build --win -p always",
+    "publish": "vue-cli-service electron:build --windows nsis:ia32 --publish=always",
+    "release": "node .electron-vue/build.js && electron-builder",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
   },
+  
   "repository": {
     "type": "git",
     "url": "https://github.com/marcosjara/tips_ptv_web"
