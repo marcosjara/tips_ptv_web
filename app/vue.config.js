@@ -30,7 +30,7 @@ module.exports = {
             "provider": "github",
             "owner": "marcosjara",
             "repo": "tips_ptv_web",
-            "token": "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"
+            "token": "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"
           }]
       }
     }
